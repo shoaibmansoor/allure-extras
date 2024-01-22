@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
@@ -6,6 +8,7 @@ const fileName = 'allure-generator.jar';
 
 
 async function downloadLatestJar() {
+    console.log("# Downloading new allure jar");
     const repoUrl = 'https://api.github.com/repos/shoaibmansoor/allure2/releases/latest';
     const response = await axios.get(repoUrl);
     const jarAsset = response.data.assets.find(asset => asset.name.endsWith('.jar'));
@@ -17,9 +20,11 @@ async function downloadLatestJar() {
     const jarUrl = jarAsset.browser_download_url;
     const jarData = await axios.get(jarUrl, { responseType: 'arraybuffer' });
     fs.writeFileSync(fileName, jarData.data);
+    console.log("# The jar downloaded successfully!");
 }
 
 function checkAllureInstallation() {
+    console.log("# Replacing older version of jar");
     const rootPath = execSync('npm root -g').toString().trim();
     const allureLibPath = path.join(rootPath, 'allure-commandline', 'dist', 'lib');
 
@@ -36,6 +41,8 @@ function checkAllureInstallation() {
     }
     // Copy the new jar file
     fs.copyFileSync(fileName, path.join(allureLibPath, allureGeneratorFile));
+    console.log("# The file has been updated successfully!");
+    console.log("# Voila! the installation is successful!!!");
 }
 
 (async () => {
