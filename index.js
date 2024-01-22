@@ -6,7 +6,6 @@ const fileName = 'allure-generator.jar';
 
 
 async function downloadLatestJar() {
-    // URL of the latest release in GitHub repo
     const repoUrl = 'https://api.github.com/repos/shoaibmansoor/allure2/releases/latest';
     const response = await axios.get(repoUrl);
     const jarAsset = response.data.assets.find(asset => asset.name.endsWith('.jar'));
