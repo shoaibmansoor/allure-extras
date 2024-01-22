@@ -11,6 +11,7 @@ Welcome to `allure-extras`! This is a neat little tool that makes your Allure te
 ## Getting Started
 
 ### Installation
+**NOTE: `Requires allure-commandline above 2.26.0`**
 
 1. **Global Install**: Run `npm install -g allure-extras`. This installs it globally so you can use it in any project.
 
