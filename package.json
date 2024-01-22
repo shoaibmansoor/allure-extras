@@ -1,6 +1,6 @@
 {
   "name": "allure-extras",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Adding additional capabilites to the Allure report",
   "main": "index.js",
   "bin": {
