@@ -1,0 +1,31 @@
+{
+  "name": "allure-extras",
+  "version": "1.0.0",
+  "description": "Adding additional capabilites to the Allure report",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoaibmansoor/allure2.git"
+  },
+  "keywords": [
+    "allure",
+    "extra",
+    "extras",
+    "extender",
+    "groups",
+    "groupby",
+    "grouping"
+  ],
+  "author": "shoaibmansoor@live.in",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoaibmansoor/allure2/issues"
+  },
+  "homepage": "https://github.com/shoaibmansoor/allure2#readme",
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
