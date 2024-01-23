@@ -8,10 +8,11 @@ Welcome to `allure-extras`! This is a neat little tool that makes your Allure te
 - **Easy to Spot Issues**: Helps you identify which modules or parts of your tests are failing without having to dig through everything.
 - **You're in Control**: Set up your own tags like `groupBy:LoginModule`, `groupBy:CheckoutProcess` – whatever makes sense for your project.
 
+![Example](https://github.com/shoaibmansoor/allure-extras/blob/main/example.jpg?raw=true)
+
 ## Getting Started
 
 ### Installation
-**NOTE: `Requires allure-commandline above 2.26.0`**
 
 1. **Global Install**: Run `npm install -g allure-extras`. This installs it globally so you can use it in any project.
 
@@ -33,6 +34,8 @@ groupBy:YourModuleName
 groupBy:YourFunctionality
 groupBy:WhateverMakesSenseForYou
 ```
+
+Note: The package has been tested with `allure-commandline` v2.26.0
 
 ### Checking Out the Results
 
