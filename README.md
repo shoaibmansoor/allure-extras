@@ -8,7 +8,7 @@ Welcome to `allure-extras`! This is a neat little tool that makes your Allure te
 - **Easy to Spot Issues**: Helps you identify which modules or parts of your tests are failing without having to dig through everything.
 - **You're in Control**: Set up your own tags like `groupBy:LoginModule`, `groupBy:CheckoutProcess` – whatever makes sense for your project.
 
-![Example](https://github.com/shoaibmansoor/allure-extras/blob/main/example.jpg?raw=true)
+![Example](https://github.com/shoaibmansoor/allure-extras/blob/main/example.png?raw=true)
 
 ## Getting Started
 
