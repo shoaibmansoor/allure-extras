@@ -25,9 +25,9 @@
   "author": "shoaibmansoor@live.in",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shoaibmansoor/allure2/issues"
+    "url": "https://github.com/shoaibmansoor/allure-extras/issues"
   },
-  "homepage": "https://github.com/shoaibmansoor/allure2#readme",
+  "homepage": "https://github.com/shoaibmansoor/allure-extras#readme",
   "dependencies": {
     "axios": "^1.6.5"
   }
